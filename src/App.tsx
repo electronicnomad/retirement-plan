@@ -293,7 +293,7 @@ export default function App() {
           {/* 입력 패널 */}
           <div className="space-y-3">
             <div className="flex items-center justify-between text-xs text-on-surface-variant">
-              <span>입력값은 이 브라우저에 자동 저장됩니다</span>
+              <span>입력값은 이 브라우저에만 자동 저장됩니다, 입력값을 따로 저장하거나 전송하지 않습니다.</span>
               <button onClick={resetInput} className="font-medium underline underline-offset-2 hover:text-on-surface">
                 초기화
               </button>
