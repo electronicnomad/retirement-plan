@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface;
+  }
+}
+
+@layer components {
+  .input-field {
+    @apply w-full px-3 py-2.5 border border-outline-variant rounded-md text-base text-on-surface bg-white focus:outline focus:outline-2 focus:outline-primary focus:border-transparent;
+  }
+
+  .input-label {
+    @apply block text-sm text-on-surface-variant mb-2;
+  }
+
+  .input-hint {
+    @apply text-xs text-on-surface-variant mt-1;
+  }
+
+  .card {
+    @apply bg-white rounded-lg border border-outline-variant p-6;
+  }
+
+  .section-header {
+    @apply flex items-center justify-between cursor-pointer select-none;
+  }
+
+  .section-title {
+    @apply font-semibold text-on-surface;
+  }
+
+  .metric-card {
+    @apply flex flex-col gap-1.5 p-4 rounded-[10px] bg-surface;
+  }
+
+  .metric-card-highlight {
+    @apply bg-primary-container;
+  }
+
+  .segmented-option {
+    @apply py-2.5 text-sm text-on-surface border border-outline-variant first:rounded-l-md last:rounded-r-md last:border-l-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary;
+  }
+
+  .segmented-option-active {
+    @apply bg-primary border-primary text-on-primary font-semibold;
+  }
+}
